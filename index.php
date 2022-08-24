@@ -29,11 +29,17 @@ for($i = 0; $i<10; $i++){
     array_push($dados, $i);
 }
 
-array_pop
+
 
 echo "<pre>";
 var_dump($dados);
 echo "</pre>";
 
+echo $dados[1] = "Fernando está no indice 1";
+echo $dados[1];
+
+echo "<pre>";
+var_dump($dados);
+echo "</pre>";
 
 ?>
