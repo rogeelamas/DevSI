@@ -33,6 +33,19 @@ function Media($num1,$num2){
     return $resultado;
 }
 
+function SomaArray($array){
+    $retorno = 0;
+    for($i = 0; $i < count($array); $i++){
+        $retorno += $array[$i];
+    }
+    return $retorno;
+}
+
+function MediaArray($array){
+    $soma = SomaArray($array);
+    return $soma/count($array);
+}
+
 function Calculator($num1, $num2, $operator){
     echo "<br>";
     if ($operator == "+"){
@@ -56,20 +69,15 @@ Calculator(8,6,"-");
 Calculator(8,6,"+");
 Calculator(8,6,"m");
 
-/*function SomaArray($array){
-    $retorno = 0;
-    for($i = 0; $i < count($array); $i++){
-        $retorno += $array[$i];
-    }
-    return $retorno;
-}*/
+$numeros = array(8,10);
+echo "<br>". MediaArray($numeros);
+
 
  //nomeFuncao();
  /*$resultado = Adicao(15,25);
  echo "O resultado da soma é:". $resultado;*/
 
-//$numeros = array(21,32,50,45,12,19,24,21,32,50,45,12,19,2421,32,50,45,12,19,2421,32,50,45,12,19,24);
-//echo SomaArray($numeros);
+
 
 
 ?>
